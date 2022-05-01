@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Food</title>
+<link rel="stylesheet" href="style.css">
+<style>
+*{
+    box-sizing:border-box;
+
+}
+
+body{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+  clear: right;
+  margin-bottom: 10px;
+  padding: 12px;
+}
+
+
+h1{
+      margin: 30px 0px 30px 0px;
+      text-align: center;
+      font-size: 175%;
+ }
+
+.row{
+    width: 100%;
+}
+
+ 
+.outer{
+    position: relative;
+    border: 1px solid black; 
+    background-color: gray;
+    margin: 1.1%;
+}
+
+.inner{
+    position: relative;
+    top:0;
+    right: 0px;
+    float: right;
+    height: 20px;
+    clear: both;
+    width: 100px;
+    border-left: 1px  solid black;
+    border-bottom: 1px  solid black;
+    text-align: center;
+    font-weight: 600; 
+    font-size: 130%;
+    padding: 3px;
+   
+}
+  
+.Chicken{
+    background-color: rosybrown;
+}
+
+  
+.Beef{
+    background-color: brown;
+    color: white;
+}
+
+  
+.Sushi{
+    background-color:burlywood;
+}
+
+  
+/********** Large devices only (Desktop View) **********/
+@media (min-width: 992px)
+{
+    .Chickent-meal, .Beef-meal, .Sushi-meal
+    {
+      float: left;
+      width: 31%;
+    }
+}
+  
+/********** Medium devices only (Tablet View)**********/
+@media (min-width: 768px) and (max-width: 991px) 
+{
+    .Chickent-meal, .Beef-meal, .Sushi-meal
+    {
+      float: left;
+      width: 47.5%;
+    }
+    .Sushi-meal
+    {
+      float: left;
+      width: 97.5%;
+    }
+}
+</style>
